@@ -20,7 +20,7 @@ public class meny : MonoBehaviour
         
     }
 
-
+    // Laddar in eller avslutar spelet när du trycker på represive knappar.
     public void quitgame()
     {
 
