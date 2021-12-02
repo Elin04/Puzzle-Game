@@ -9,12 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Opening.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Jack the ripper game.unity
-    guid: c184117a1b418464f88cb27ecc518122
-  - enabled: 1
-    path: Assets/Scenes/ending.unity
-    guid: d2c90d3531e17cd4cb716a2f5985317f
-  - enabled: 1
-    path: Assets/Scenes/EndingsceneJAck.unity
-    guid: 9816fc9e27c61484e81c0afd0c9b9f1e
+    path: Assets/Scenes/level1.unity
+    guid: 42b707f76b43bd645a6bb6bfcb6b2b27
   m_configObjects: {}
