@@ -15,7 +15,7 @@ public class higlightgameobject : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        rendr.material.color = Color.magenta;
+        rendr.material.color = Color.red;
     }
 
     private void OnMouseExit()
