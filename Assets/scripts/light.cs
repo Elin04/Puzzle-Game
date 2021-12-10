@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class light : MonoBehaviour
+public class light : gamecontoler
 {
     Vector3 pos, dir;
     GameObject lightObject;
@@ -110,6 +110,12 @@ public class light : MonoBehaviour
 
             Vector3 refractedvector2 = Refractt(n2, n1, -hit2.normal, refractedvector);
             castray(hit2.point, refractedvector2, lightt);
+        }
+        else if ((hitinfo.collider.gameObject.tag == "mål"))
+        {
+            levelcompleat++;
+
+            newxtlevel();
         }
         else
         {

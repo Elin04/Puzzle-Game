@@ -6,7 +6,7 @@ public class Shootlight : MonoBehaviour
 {
     public Material material;
     light lightbeam;
-
+    
 
     // Update is called once per frame
     void Update()
