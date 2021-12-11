@@ -7,6 +7,7 @@ TagManager:
   - Button
   - mirror
   - Refract
+  - "m\xE5l"
   layers:
   - Default
   - TransparentFX

@@ -8,6 +8,7 @@ public class move : MonoBehaviour, Iinteractabole
     public GameObject[] movepoints;
     bool startpoint = true;
 
+    public GameObject moveinggamohject;
     public GameObject movepositon;
     private Vector3 postion1;
     private Vector3 postion2;
@@ -16,7 +17,7 @@ public class move : MonoBehaviour, Iinteractabole
     void Start()
     {
         postion1 = movepositon.transform.position;
-        postion2 = gameObject.transform.position;
+        postion2 = moveinggamohject.transform.position;
         rendr = GetComponent<Renderer>();
        
     }
@@ -36,16 +37,17 @@ public class move : MonoBehaviour, Iinteractabole
         rendr.material.color = Color.white;
     }
     public void spin()
-    {
+    {/*
+       
         if(startpoint = true)
         {
-            gameObject.transform.position = postion2;
+            moveinggamohject.transform.position = postion2;
             startpoint = false;
         }
         else
         {
-            gameObject.transform.position = postion1;
+            moveinggamohject.transform.position = postion1;
             startpoint = true;
-        }
+        }*/
     }
 }
