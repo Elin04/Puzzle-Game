@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class higlightgameobject : MonoBehaviour, Iinteractabole
 {
-    private Renderer rendr;
+    public Renderer rendr;
     
     void Start()
     {
@@ -23,9 +23,9 @@ public class higlightgameobject : MonoBehaviour, Iinteractabole
     {
         rendr.material.color = Color.white;
     }
-  
-    public void spin()
+
+    public virtual void spin()
     {
-        gameObject.transform.Rotate(0, 0, +45);
+        
     }
 }

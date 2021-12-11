@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4644162136194330245}
   - component: {fileID: 4644162136194330244}
   - component: {fileID: 4644162136194330243}
-  - component: {fileID: 4644162136194330246}
+  - component: {fileID: 980181746586773201}
   m_Layer: 0
   m_Name: mirror
   m_TagString: mirror
@@ -97,7 +97,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4644162136194330246
+--- !u!114 &980181746586773201
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,6 +106,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4644162136194330242}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad39caf8b4e07e646b5f9b92946bcc38, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f9d295151909db45a3e313a1846f267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rendr: {fileID: 0}

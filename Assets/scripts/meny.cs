@@ -3,22 +3,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class meny : MonoBehaviour
 {
     public int buildIndex;
+    public Text timmerText;
+    public float scoree;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 
     // Laddar in eller avslutar spelet när du trycker på represive knappar.
     public void quitgame()
@@ -33,6 +30,14 @@ public class meny : MonoBehaviour
     {
 
         SceneManager.LoadScene(buildIndex);
+
+    }
+
+    public void loadscore()
+    {
+
+        scoree = PlayerPrefs.GetFloat("timescore");
+        timmerText.text = (""+ scoree);
 
     }
 }

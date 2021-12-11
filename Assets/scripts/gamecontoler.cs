@@ -7,45 +7,70 @@ using UnityEngine.UI;
 
 public class gamecontoler : MonoBehaviour
 {
-    public int levelcompleat = 1;
-    public int scensindex = 5;
+    public static int levelcompleat = 1;
+    public int scensindex = 4;
 
-    public float timmer = 0;
+    public static float timmer;
     public Text timmerText;
+   
+  
+    static bool timmeron = true;
 
     public void newxtlevel()
     {
-        if (levelcompleat <scensindex-1)
+        if (levelcompleat <scensindex)
         {
-
+            
+           
             SceneManager.LoadScene(levelcompleat);
-
+            bool timmeron = true;
         }
-        else if(levelcompleat <= scensindex)
+        else 
         {
-            SceneManager.LoadScene(scensindex);
+            timmeron = false;
+           
+            SceneManager.LoadScene(4);
+
+           
         }
         
     }
 
     public void Update()
     {
-        timmer += Time.deltaTime;
+      if(timmeron == true)
+        {
+            timmer += Time.deltaTime;
+
+        }
+
         timmerText.text = "time: " + timmer;
+       
+
+
     }/*
     public void savescore()
     {
         PlayerPrefs.GetFloat("timescore");
 
     }*/
-
-    private void Start()
+    public void savetime()
     {
-        if(levelcompleat >= scensindex)
-        {
-            //loda higscore
+        PlayerPrefs.SetFloat("timescore", timmer);
 
-        }
+    }
+    public void quitgame()
+    {
+
+
+        Application.Quit();
+
+    }
+
+    public void start()
+    {
+
+        SceneManager.LoadScene(0);
 
     }
 }

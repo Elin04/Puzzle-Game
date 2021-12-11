@@ -570,6 +570,11 @@ PrefabInstance:
       propertyPath: timmerText
       value: 
       objectReference: {fileID: 1294075879}
+    - target: {fileID: 822859417224556382, guid: 62e4a62b3e51182489fef9c5541650f9,
+        type: 3}
+      propertyPath: pointtext
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 822859417224556383, guid: 62e4a62b3e51182489fef9c5541650f9,
         type: 3}
       propertyPath: m_Name
@@ -860,6 +865,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7438978067199765170, guid: 93f7cd2be330df2438048b90fa0de2e3,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438978067199765170, guid: 93f7cd2be330df2438048b90fa0de2e3,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438978067199765170, guid: 93f7cd2be330df2438048b90fa0de2e3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438978067199765170, guid: 93f7cd2be330df2438048b90fa0de2e3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438978067199765170, guid: 93f7cd2be330df2438048b90fa0de2e3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438978067199765170, guid: 93f7cd2be330df2438048b90fa0de2e3,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438978067199765170, guid: 93f7cd2be330df2438048b90fa0de2e3,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7438978067946802403, guid: 93f7cd2be330df2438048b90fa0de2e3,
         type: 3}
       propertyPath: m_Name
