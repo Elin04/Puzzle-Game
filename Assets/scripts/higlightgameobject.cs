@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class higlightgameobject : MonoBehaviour
+public class higlightgameobject : MonoBehaviour, Iinteractabole
 {
     private Renderer rendr;
-    // Start is called before the first frame update
+    
     void Start()
     {
+       
         rendr = GetComponent<Renderer>();
+      
     }
 
-    
 
     private void OnMouseEnter()
     {
@@ -21,5 +22,10 @@ public class higlightgameobject : MonoBehaviour
     private void OnMouseExit()
     {
         rendr.material.color = Color.white;
+    }
+  
+    public void spin()
+    {
+        gameObject.transform.Rotate(0, 0, +45);
     }
 }

@@ -32,12 +32,12 @@ public class gamecontoler : MonoBehaviour
     {
         timmer += Time.deltaTime;
         timmerText.text = "time: " + timmer;
-    }
+    }/*
     public void savescore()
     {
         PlayerPrefs.GetFloat("timescore");
 
-    }
+    }*/
 
     private void Start()
     {

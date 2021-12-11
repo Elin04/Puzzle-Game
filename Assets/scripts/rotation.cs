@@ -20,13 +20,15 @@ public class rotation : MonoBehaviour
 
             if(Physics.Raycast(ray, out RaycastHit hitinfo))
             {
-                if (hitinfo.collider.gameObject.GetComponent<higlightgameobject>() != null)
-                {
-                    print("hitgameobject");
-                    hitinfo.collider.transform.Rotate(0, 0, +45);
 
-                    //gameObject.transform.rotation.eulerAngles.Set (0, 0, +90);
+                Iinteractabole interactive = hitinfo.collider.GetComponent<Iinteractabole>();
+                if(interactive != null)
+                {
+                    interactive.spin();
                 }
+
+               
+            
             }
         }
     }
