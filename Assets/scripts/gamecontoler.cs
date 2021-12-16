@@ -4,20 +4,20 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-
+// Elin
 public class gamecontoler : MonoBehaviour
-{
+{//scens en vilken spelet börjar på och slutar på
     public static int levelcompleat = 1;
-    public int scensindex = 4;
-
+    public int scensindex = 5;
+    // en timmer för våran score system och en text för att desplaya den
     public static float timmer;
     public Text timmerText;
    
-  
-    static bool timmeron = true;
-
+// så timemern stanar när den har staat  
+      static bool timmeron = true;
+    // en nextlevel function som vi kallar på när man träffar målet med ljuset
     public void newxtlevel()
-    {
+    {// kollar så att det inte är sista nars går vi bara till sästa scen
         if (levelcompleat <scensindex)
         {
             
@@ -26,10 +26,10 @@ public class gamecontoler : MonoBehaviour
             bool timmeron = true;
         }
         else 
-        {
+        {// på sista scenen så säter vi timmern till false och hoppar till endscen scenen
             timmeron = false;
            
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(5);
 
            
         }
@@ -37,7 +37,7 @@ public class gamecontoler : MonoBehaviour
     }
 
     public void Update()
-    {
+    {// topar timern ifall timmeron är false 
       if(timmeron == true)
         {
             timmer += Time.deltaTime;
@@ -48,20 +48,15 @@ public class gamecontoler : MonoBehaviour
        
 
 
-    }/*
-    public void savescore()
-    {
-        PlayerPrefs.GetFloat("timescore");
-
-    }*/
+    }
     public void savetime()
-    {
+    {// sparar en float i timescore i playerprefs
         PlayerPrefs.SetFloat("timescore", timmer);
 
     }
     public void quitgame()
     {
-
+        // en quit game knap funktion
 
         Application.Quit();
 
@@ -69,7 +64,8 @@ public class gamecontoler : MonoBehaviour
 
     public void start()
     {
-
+        // går till meny knap 
+        //lodar första scenen
         SceneManager.LoadScene(0);
 
     }

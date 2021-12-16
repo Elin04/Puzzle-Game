@@ -4,17 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+// Elin
 public class meny : MonoBehaviour
-{
+{// scenen man ska byta till och texten och floten för score
     public int buildIndex;
     public Text timmerText;
     public float scoree;
 
-    // Start is called before the first frame update
-
-
-    // Update is called once per frame
+  
 
 
     // Laddar in eller avslutar spelet när du trycker på represive knappar.
@@ -28,13 +25,13 @@ public class meny : MonoBehaviour
 
     public void start()
     {
-
+        
         SceneManager.LoadScene(buildIndex);
 
     }
 
     public void loadscore()
-    {
+    {// lodar scoren i som jag savede i gamecontoler och sedan displayar den
 
         scoree = PlayerPrefs.GetFloat("timescore");
         timmerText.text = (""+ scoree);
