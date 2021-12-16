@@ -44,7 +44,7 @@ public class gamecontoler : MonoBehaviour
 
         }
 
-        timmerText.text = "time: " + timmer;
+        timmerText.text = "Tid: " + timmer;
        
 
 
